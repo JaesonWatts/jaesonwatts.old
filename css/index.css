@@ -1,0 +1,27 @@
+.btn{
+    width: 200px;
+    height: 50px;
+    margin:100px auto;
+    /*background-image: linear-gradient(to left,lightgrey,gold);*/
+    background-color: hsl(58,100%,50%);
+    border:5px inset white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: capitalize;
+    animation:brath 8s  linear infinite;
+    box-shadow: -1px 0px 10px #000;
+}
+@keyframes brath{
+    0%{transform: scale(.9);}
+    25%{transform: scale(1);}
+    60%{transform: scale(.9);}
+    100%{transform: scale(1);}
+}
+@-webkit-keyframes greenPulse {
+from { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+50% { background-color: #91bd09; -webkit-box-shadow: 0 0 18px #91bd09; }
+to { background-color: #749a02; -webkit-box-shadow: 0 0 9px #333; }
+}
+
