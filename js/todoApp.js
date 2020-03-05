@@ -33,6 +33,29 @@ var todoList = {
     var todo = this.todos[position];
     todo.completed = !todo.completed;
   }
+  toggleAll: function() {
+    var totalTodos = this.todos.length;
+    var completedTodos = 0;
+    
+    //get num of complete todo
+    for (var i = 0; i < totalTodos; i++){
+      if (this.todos[i].completed === true) {
+        completedTodos++;
+      }
+    }
+    // Case 1: if all true make all false
+    if (completedTodos  === totalTodos) {
+      // make all false
+      for (var i = 0; i < totalTodos; i++) {
+        this.todos[i].completed = false;
+      }
+    } else {
+      // Case 2: else make all true
+      for (var = i; i < totalTodos; i++) {
+        this.todos[i].completed = true;
+      }
+    }
+  }
 };
 
 
@@ -43,3 +66,7 @@ var todoList = {
 // V5 Req: .displayTodos should show .todoText*
 // .displayTodos should tess you if .todos is empty*
 // .displayTodos should show .completed*
+
+// V6 Req: .toggleAll: if everything is true make it all false*
+// .toggleAll: otherwise make it all true*
+
