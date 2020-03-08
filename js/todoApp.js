@@ -58,6 +58,18 @@ var todoList = {
   }
 };
 
+var displayTodosButton = document.getElementById('displayTodosButton');
+var toggleAllButton = document.getElementById("toggleAllButton");
+
+displayTodosButton.addEventListener('click', function() {
+  todoList.displayTodos();
+});
+
+toggleAllButton.addEventListener('click', function(){
+  todoList.toggleAll();
+});
+
+
 
 // V4 req: todoList.addTodo should add objects *
 // toList.changeTodo should change the todoText property *
@@ -69,4 +81,17 @@ var todoList = {
 
 // V6 Req: .toggleAll: if everything is true make it all false*
 // .toggleAll: otherwise make it all true*
+
+//v7: should have a display todos button and toggle all button in the app
+// clicking display todos button should run displayTodos method
+// clicking toggle all button should run toggle all method
+
+//v8: 
+//
+
+//v9:
+//
+
+//v10:
+//
 
