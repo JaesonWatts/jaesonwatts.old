@@ -28,15 +28,14 @@ var todoList = {
   deleteTodo: function(position) {
     this.todos.splice(position, 1);
     this.displayTodos();
-  }
+  },
   toggleCompleted: function(position) {
     var todo = this.todos[position];
     todo.completed = !todo.completed;
-  }
+  },
   toggleAll: function() {
     var totalTodos = this.todos.length;
     var completedTodos = 0;
-    
     //get num of complete todo
     for (var i = 0; i < totalTodos; i++){
       if (this.todos[i].completed === true) {
