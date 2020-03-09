@@ -50,7 +50,7 @@ var todoList = {
       }
     } else {
       // Case 2: else make all true
-      for (var = i; i < totalTodos; i++) {
+      for (var i = 0; i < totalTodos; i++) {
         this.todos[i].completed = true;
       }
     }
