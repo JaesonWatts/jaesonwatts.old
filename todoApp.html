@@ -3,35 +3,37 @@
 <html>
   <head>
     <title>Jaeson's Todo App</title>
+    <link rel="stylesheet" type="text/css" href="/css/todoApp.css">
   </head>
 
   <body>
     <h1>Todo List</h1>
-
-    <div>
+  <section class="basic-grid">
+    <div class="card">
       <button onclick="handlers.addTodo()">Add Todo</button>
       <input type="text" id="addTodoTextInput" placeholder="New Todo Text">
     </div>
 
-    <div>
+    <div class="card">
       <button onclick="handlers.changeTodo()">Change Todo</button>
       <input id="changeTodoPositionInput" type="number" placeholder="Todo Position">
       <input id="changeTodoTextInput" type="text" placeholder="New Todo Text">
     </div>
 
-    <div>
+    <div class="card">
       <button onclick="handlers.deleteTodo()">Delete Todo</button>
       <input id="deleteTodoPositionInput" type="number" placeholder="Todo Position">
     </div>
 
-    <div>
+    <div class="card">
       <button onclick="handlers.toggleCompleted()">Toggle Completed</button>
       <input id="toggleCompletedPositionInput" type="number" placeholder="Todo Position">
     </div>
 
-    <div>
+    <div class="card">
       <button onclick="handlers.toggleAll()">Toggle All</button>
     </div>
+   </section>
 
    <ul>   
    </ul>
